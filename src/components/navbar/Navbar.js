@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
+import { Button } from '../../globalStyles';
 import {
   Nav,
   NavbarContainer,
@@ -10,12 +11,30 @@ import {
   NavMenu,
   NavItem,
   NavLink,
+  NavBtnLink,
+  NavItemBtn,
 } from './Navbar.style';
 const Navbar = () => {
   const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
-  console.log(click);
+
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
+  useEffect(() => {
+    showButton();
+  }, []);
+
+  window.addEventListener('resize', showButton);
+
+  //const closeMobileMenu = () => setButton(!button);
+
   return (
     <div>
       <IconContext.Provider value={{ color: '#fff' }}>
@@ -28,7 +47,7 @@ const Navbar = () => {
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>
-            <NavMenu onClick={handleClick}>
+            <NavMenu onClick={handleClick} click={click}>
               <NavItem>
                 <NavLink to="/">Home</NavLink>
               </NavItem>
@@ -44,6 +63,19 @@ const Navbar = () => {
               <NavItem>
                 <NavLink to="/">More</NavLink>
               </NavItem>
+              <NavItemBtn>
+                {button ? (
+                  <NavBtnLink to="/sign-up">
+                    <Button primary>SING UP</Button>
+                  </NavBtnLink>
+                ) : (
+                  <NavBtnLink to="/sign-up">
+                    <Button fontBig primary>
+                      SIGN UP
+                    </Button>
+                  </NavBtnLink>
+                )}
+              </NavItemBtn>
             </NavMenu>
           </NavbarContainer>
         </Nav>

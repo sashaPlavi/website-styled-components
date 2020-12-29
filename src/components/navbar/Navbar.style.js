@@ -58,7 +58,7 @@ export const NavMenu = styled.ul`
   @media screen and (max-width: 950px) {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     height: 90vh;
     position: absolute;
     top: 80%;
@@ -104,4 +104,25 @@ export const NavLink = styled(Link)`
       transition: all 0.3s ease;
     }
   }
+`;
+
+export const NavItemBtn = styled.li`
+  @media screen and (max-width: 960px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+  }
+`;
+export const NavBtnLink = styled(Link)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 8px 16px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
 `;
