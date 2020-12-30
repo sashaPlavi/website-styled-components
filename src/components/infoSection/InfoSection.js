@@ -10,7 +10,16 @@ const InfoSection = ({ lightBg, imgStart }) => {
         <Container>
           <InfoRow imgStart={imgStart}>
             <InfoColumn>
-              <TextWrapper>yo</TextWrapper>
+              <TextWrapper>
+                <TopLine lightTopLine={lightTopLine}>{TopLine}</TopLine>
+                <Heading lightText={lightText}>{headLine}</Heading>
+                <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
+                <Link to="sign-up">
+                  <Button big fontBig primary={primary}>
+                    {buttonLabel}
+                  </Button>
+                </Link>
+              </TextWrapper>
             </InfoColumn>
           </InfoRow>
         </Container>
