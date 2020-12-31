@@ -1,13 +1,15 @@
 import React from 'react';
 import { InfoSection } from '../../components';
-import { Container } from '../../globalStyles';
 
-import { HomeObjOne } from './Data';
+import { HomeObjFour, HomeObjOne, HomeObjThre, HomeObjTwo } from './Data';
 
 const Home = () => {
   return (
     <>
       <InfoSection {...HomeObjOne}></InfoSection>
+      <InfoSection {...HomeObjTwo}></InfoSection>
+      <InfoSection {...HomeObjThre}></InfoSection>
+      <InfoSection {...HomeObjFour}></InfoSection>
     </>
   );
 };
