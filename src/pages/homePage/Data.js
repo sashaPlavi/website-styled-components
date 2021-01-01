@@ -8,7 +8,7 @@ export const HomeObjOne = {
   buttonLabel: 'Get Started',
   description: `We help buisness owners increase their revenue. Our team of unique specialist
   cah help you  achive your buisness gols `,
-  headLine: 'Leade Generations Specialist For Online Buisness ',
+  headLine: 'Lead Generations Specialist For Online Buisness ',
 
   primary: true,
   topLine: 'Marketing Agency',
@@ -27,7 +27,7 @@ export const HomeObjTwo = {
   buttonLabel: 'Get Started',
   description: `We help buisness owners increase their revenue. Our team of unique specialist
   cah help you  achive your buisness gols `,
-  headLine: 'Leade Generations Specialist For Online Buisness ',
+  headLine: 'Lead Generations Specialist For Online Buisness ',
 
   primary: true,
   topLine: 'Marketing Agency',
@@ -46,7 +46,7 @@ export const HomeObjThre = {
   buttonLabel: 'Get Started',
   description: `We help buisness owners increase their revenue. Our team of unique specialist
   cah help you  achive your buisness gols `,
-  headLine: 'Leade Generations Specialist For Online Buisness ',
+  headLine: 'Lead Generations Specialist For Online Buisness ',
 
   primary: true,
   topLine: 'Marketing Agency',
@@ -63,8 +63,8 @@ export const HomeObjFour = {
   lightTopLine: false,
   buttonLabel: 'Get Started',
   description: `We help buisness owners increase their revenue. Our team of unique specialist
-  cah help you  achive your buisness gols `,
-  headLine: 'Leade Generations Specialist For Online Buisness ',
+  cah help you achive your buisness gols `,
+  headLine: 'Lead Generations Specialist For Online Buisness ',
 
   primary: true,
   topLine: 'Marketing Agency',
