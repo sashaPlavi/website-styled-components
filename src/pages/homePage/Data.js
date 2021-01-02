@@ -1,10 +1,10 @@
 export const HomeObjOne = {
-  lightBg: false,
+  lightBg: true,
 
   imgStart: '',
-  lightText: true,
-  lightTextDesc: true,
-  lightTopLine: true,
+  lightText: false,
+  lightTextDesc: false,
+  lightTopLine: false,
   buttonLabel: 'Get Started',
   description: `We help buisness owners increase their revenue. Our team of unique specialist
   cah help you  achive your buisness gols `,
